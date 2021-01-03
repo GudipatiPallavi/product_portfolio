@@ -6,4 +6,4 @@ Taking a project from an idea into Figma, then bringing it to life with code has
 
 🔗 [Check out the live version here.](https://akhillochen.github.io/product-design-portfolio/website)
 
-!(Akhil Lochen — Product Designer)[website/images/og-img-akhil-lochen-portfolio.jpg]
+!(Akhil Lochen — Product Designer)[https://github.com/akhillochen/product-design-portfolio/blob/master/website/images/og-img-akhil-lochen-portfolio.jpg?raw=true]
