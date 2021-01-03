@@ -1,9 +1,9 @@
 # Akhil Lochen — Product Design Portfolio
 
-Had a lotta fun building my product design portfolio. 
+This repo contains the code that powers my product design portfolio website.
 
-Taking a project from an idea into Figma, then bringing it to life with code has got to be one of the most satisfying experiences ever! Also, learnt a bunch (shout-out to Stack Overflow & YouTube). 
+Had a lotta fun building this. Taking a project from an idea into Figma, then bringing it to life with code has got to be one of the most satisfying experiences ever! Also, learnt the basics of CSS animations during this project (shout-out to Stack Overflow & YouTube). 
 
-🔗 [Check out the live version here.](https://akhillochen.github.io/product-design-portfolio/website)
+🔗 [Click here](https://akhillochen.github.io/product-design-portfolio/website) to check out the live version of the site.
 
 ![Akhil Lochen — Product Designer](https://github.com/akhillochen/product-design-portfolio/blob/master/website/images/og-img-akhil-lochen-portfolio.jpg?raw=true)
