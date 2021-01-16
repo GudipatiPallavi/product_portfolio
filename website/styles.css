@@ -212,6 +212,10 @@ a {
   background-color: white;
 }
 
+.third {
+  padding-bottom: 20px;
+}
+
 .disappear {
   opacity: 0;
   transform: translateY(20px);

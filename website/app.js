@@ -1,11 +1,15 @@
 function scrollAppear() {
-  var appearItem = document.querySelector('.case-study');
+  var appearItem = document.querySelector('.first');
   var itemPosition = appearItem.getBoundingClientRect().top;
   var screenPosition = window.innerHeight / 1.5;
 
   var appearItem2 = document.querySelector('.second');
   var itemPosition2 = appearItem2.getBoundingClientRect().top;
   var screenPosition2 = window.innerHeight / 1.5;
+
+  var appearItem3 = document.querySelector('.third');
+  var itemPosition3 = appearItem3.getBoundingClientRect().top;
+  var screenPosition3 = window.innerHeight / 1.5;
 
   if (itemPosition < screenPosition) {
     appearItem.classList.remove('disappear');
@@ -21,6 +25,14 @@ function scrollAppear() {
   } else if (itemPosition2 > screenPosition2) {
     appearItem2.classList.remove('appear');
     appearItem2.classList.add('disappear');
+  }
+
+  if (itemPosition3 < screenPosition3) {
+    appearItem3.classList.remove('disappear');
+    appearItem3.classList.add('appear');
+  } else if (itemPosition3 > screenPosition3) {
+    appearItem3.classList.remove('appear');
+    appearItem3.classList.add('disappear');
   }
 }
 
