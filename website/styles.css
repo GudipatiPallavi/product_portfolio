@@ -31,6 +31,7 @@ body {
 }
 
 .body::after {
+  z-index: 3;
   content: "";
   position: absolute;
   background-color: #2667ff;
@@ -63,7 +64,7 @@ body {
 
 nav {
   max-width: 1156px;
-  margin: 10vh 142px 14vh 142px;
+  margin: 10vh 142px 10vh 142px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -99,15 +100,22 @@ a {
 .brand {
   width: fit-content;
   color: #3d3d3d;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 400;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.8px;
   clip-path: inset(0 0 0 0);
 }
 
 .brand:hover, .brand-about:hover {
   transition: 0.3s;
   color: #2667FF;
+}
+
+.brand-desc {
+  padding-top: 4px;
+  color: #777777;
+  letter-spacing: 1px;
+  font-weight: 300;
 }
 
 .ham {
@@ -174,23 +182,72 @@ a {
 .scroll-down-arrow {
   text-align: center;
   pointer-events: none;
+  opacity: 0.4;
 }
 
-.bounce {
-  -moz-animation: bounce 1.6s infinite;
-  -webkit-animation: bounce 1.6s infinite;
-  animation: bounce 1.6s infinite;
+#intern-cta {
+  padding-left: 24px;
+  float: left;
+  display: flex;
+  position: fixed;
+  z-index: 2;
+  left: 142px;
+  bottom: 30px;
+  flex-direction: row;
+  align-items: center;
+  background-color: white;
+  box-shadow: 0px 2px 20px #00000030;
+  border-radius: 50px;
 }
 
-@keyframes bounce {
+.cta-caption {
+  margin-right: 15px;
+  font-weight: 400;
+  color: #3d3d3d;
+  letter-spacing: 0.5px;
+}
+
+.cta-caption::before {
+  content: '';
+  display: inline-block;
+  margin-right: 8px;
+  width: 11px;
+  height: 11px;
+  opacity: 0;
+  border-radius: 7.5px;
+  background-color: #2667FF;
+  animation: emphasize 1.6s ease-out infinite;
+}
+
+@keyframes emphasize {
   0%, 100% {
-    transform: translateY(0);
-    opacity: 0.3;
+    opacity: 0.2;
   }
-  20% {
-    transform: translateY(20px);
+  50% {
     opacity: 1;
   }
+}
+
+.intern-cta-button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 20px;
+  color: white;
+  background-color: #2667FF;
+  border-radius: 0px 50px 50px 0px;
+}
+
+.intern-cta-button:hover {
+  transition: 100ms ease-in-out;
+  background-color: #4c7ef1;
+  box-shadow: 0px 8px 20px #2667FF45;
+}
+
+.intern-cta-button:active {
+  transition: 50ms ease-in-out;
+  background-color: #1f5ae2;
+  box-shadow: 0px 1px 2px #2667FF60;
 }
 
 .selected-work {
@@ -199,6 +256,7 @@ a {
 }
 
 .case-study {
+  z-index: 0;
   max-width: 1440px;
   margin-bottom: 40px;
   padding-top: 100px;
@@ -209,10 +267,12 @@ a {
 }
 
 .second {
+  z-index: 0;
   background-color: white;
 }
 
 .third {
+  z-index: 0;
   padding-bottom: 20px;
 }
 
@@ -227,16 +287,19 @@ a {
 }
 
 .case-study-text {
+  z-index: 0;
   margin: 100px 0 0 142px;
   max-width: 50%;
 }
 
 .case-study-company-year {
+  z-index: 0;
   margin-bottom: 24px;
   color: #777777;
 }
 
 .case-study-title {
+  z-index: 0;
   margin-bottom: 30px;
   font-size: 48px;
   font-weight: 400;
@@ -244,6 +307,7 @@ a {
 }
 
 .case-study-description {
+  z-index: 0;
   margin-bottom: 40px;
   font-size: 24px;
   font-weight: 300;
@@ -253,6 +317,7 @@ a {
 }
 
 .case-study-read-button {
+  z-index: 0;
   padding: 12px 20px 12px 20px;
   background-color: #2667FF;
   color: white;
@@ -282,6 +347,7 @@ a {
 }
 
 footer {
+  z-index: 3;
   margin-top: 120px;
   padding: 30px 0;
   text-align: center;
@@ -455,6 +521,9 @@ figcaption {
   .hero {
     margin: 0 60px 120px 60px;
   }
+  #intern-cta {
+    left: 60px;
+  }
   nav {
     margin: 10vh 60px 8vh 60px;
   }
@@ -479,6 +548,15 @@ figcaption {
 @media (max-width: 736px) {
   .hero {
     margin: 0 16px 100px 16px;
+  }
+  #intern-cta {
+    left: 16px;
+  }
+  .cta-caption::before {
+    margin-right: 4px;
+  }
+  .intern-cta-button {
+    padding: 20px 20px 20px 10px;
   }
   nav {
     margin: 10vh 16px 10vh 16px;
@@ -570,5 +648,19 @@ figcaption {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+  }
+}
+
+@media (max-width: 375px) {
+  #intern-cta {
+    left: 8px;
+    font-size: 13px;
+    padding-left: 11px;
+  }
+  .cta-caption {
+    margin-right: 6px;
+  }
+  .intern-cta-button {
+    padding: 20px 10px;
   }
 }

@@ -10,6 +10,9 @@ function scrollAppear() {
   var appearItem3 = document.querySelector('.third');
   var itemPosition3 = appearItem3.getBoundingClientRect().top;
   var screenPosition3 = window.innerHeight / 1.5;
+  
+  var itemPosition4 = document.querySelector('footer').getBoundingClientRect().top;
+  var screenPosition4 = window.innerHeight;
 
   if (itemPosition < screenPosition) {
     appearItem.classList.remove('disappear');
@@ -33,6 +36,14 @@ function scrollAppear() {
   } else if (itemPosition3 > screenPosition3) {
     appearItem3.classList.remove('appear');
     appearItem3.classList.add('disappear');
+  }
+
+  if (itemPosition4 < screenPosition4) {
+    document.querySelector('#intern-cta').classList.add('disappear');
+    document.querySelector('#intern-cta').classList.remove('appear');
+  } else if (itemPosition4 > screenPosition4) {
+    document.querySelector('#intern-cta').classList.add('appear');
+    document.querySelector('#intern-cta').classList.remove('disappear');
   }
 }
 
