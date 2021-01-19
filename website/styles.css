@@ -550,7 +550,8 @@ figcaption {
     margin: 0 16px 100px 16px;
   }
   #intern-cta {
-    left: 16px;
+    bottom: 10px;
+    left: 8px;
   }
   .cta-caption::before {
     margin-right: 4px;
@@ -653,7 +654,6 @@ figcaption {
 
 @media (max-width: 375px) {
   #intern-cta {
-    left: 8px;
     font-size: 13px;
     padding-left: 11px;
   }
