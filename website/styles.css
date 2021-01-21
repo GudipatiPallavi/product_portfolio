@@ -432,6 +432,11 @@ footer {
   font-weight: 400;
 }
 
+.users {
+  text-decoration: line-through;
+  background-color: white;
+}
+
 figure {
   animation: fadein 1s;
   margin: 40px 0 60px 0;
