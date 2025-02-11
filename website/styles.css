@@ -276,10 +276,10 @@ a {
   padding-bottom: 20px;
 }
 
-.disappear {
+/* .disappear {
   opacity: 0;
   transform: translateY(20px);
-}
+} */
 
 .appear {
   opacity: 1;
