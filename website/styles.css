@@ -338,8 +338,13 @@ a {
 }
 
 .case-study-image {
-  object-fit: contain;
-  pointer-events: none;
+  /* object-fit: contain;
+  pointer-events: none; */
+  width: 100%; /* Adjust width, or use a fixed px value like 300px */
+  max-width: 600px; /* Ensures it doesn’t get too large */
+  height: auto; /* Maintains aspect ratio */
+  object-fit: cover; /* Crops image to fit if necessary */
+  border-radius: 10px; /
 }
 
 .more-margin {
