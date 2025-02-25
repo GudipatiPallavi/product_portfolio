@@ -677,6 +677,15 @@ figcaption {
     padding: 20px 10px;
   }
 
+  #typing-text {
+    color: #4CAF50;  /* Green text */
+    font-weight: bold;
+    font-size: 24px;
+  }
+  .typed-cursor {
+    color: #4CAF50;  /* Cursor color */
+    font-size: 24px;
+  }
   
 
 
