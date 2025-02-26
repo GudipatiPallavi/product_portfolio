@@ -694,7 +694,9 @@ figcaption {
   
 
 
-
+  h2::after, a::after {
+    display: none !important;
+  }
 
 
 
