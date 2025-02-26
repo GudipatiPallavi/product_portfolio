@@ -30,7 +30,7 @@ body {
   align-content: center;
 }
 
-.body::after {
+/* .body::after {
   z-index: 3;
   content: "";
   position: absolute;
@@ -43,7 +43,7 @@ body {
   transform: scaleX(0);
   animation: slide-animation 2s cubic-bezier(1, .01, .22, 1.04) both;
   animation-delay: 0.4s;
-}
+} */
 
 @keyframes slide-animation {
   0% {
