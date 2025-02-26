@@ -283,8 +283,13 @@ a {
 
 .appear {
   opacity: 1;
-  transform: translateY(0);
+  /* transform: translateY(0); */
+  transform: none;
 }
+.disappear {
+  opacity: 1;
+  transform: none;
+} 
 
 .case-study-text {
   z-index: 0;

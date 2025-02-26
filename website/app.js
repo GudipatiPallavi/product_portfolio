@@ -15,35 +15,35 @@ function scrollAppear() {
   var screenPosition4 = window.innerHeight;
 
   if (itemPosition < screenPosition) {
-    appearItem.classList.remove('disappear');
+    appearItem.classList.remove('appear');
     appearItem.classList.add('appear');
   } else if (itemPosition > screenPosition) {
     appearItem.classList.remove('appear');
-    appearItem.classList.add('disappear');
+    appearItem.classList.add('appear');
   }
 
   if (itemPosition2 < screenPosition2) {
-    appearItem2.classList.remove('disappear');
+    appearItem2.classList.remove('appear');
     appearItem2.classList.add('appear');
   } else if (itemPosition2 > screenPosition2) {
     appearItem2.classList.remove('appear');
-    appearItem2.classList.add('disappear');
+    appearItem2.classList.add('appear');
   }
 
   if (itemPosition3 < screenPosition3) {
-    appearItem3.classList.remove('disappear');
+    appearItem3.classList.remove('appear');
     appearItem3.classList.add('appear');
   } else if (itemPosition3 > screenPosition3) {
     appearItem3.classList.remove('appear');
-    appearItem3.classList.add('disappear');
+    appearItem3.classList.add('appear');
   }
 
   if (itemPosition4 < screenPosition4) {
-    document.querySelector('#intern-cta').classList.add('disappear');
+    document.querySelector('#intern-cta').classList.add('appear');
     document.querySelector('#intern-cta').classList.remove('appear');
   } else if (itemPosition4 > screenPosition4) {
     document.querySelector('#intern-cta').classList.add('appear');
-    document.querySelector('#intern-cta').classList.remove('disappear');
+    document.querySelector('#intern-cta').classList.remove('appear');
   }
 }
 
