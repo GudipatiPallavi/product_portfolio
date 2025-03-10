@@ -1,10 +1,18 @@
 # Pallavi Gudipati — Product Portfolio
 
-This repo contains the code that powers my product design portfolio website.
+This repo contains the code of my portfolio website.
 
-Had a lot of fun building this website. Taking a project from an idea into Figma, then bringing it to life with code has got to be one of the most satisfying experiences ever! 
+Welcome to my portfolio! Here, you'll find:
+
+🌟 Projects related to the career I aspire to pursue
+💡 A bit about me and my journey
+🎯 My skills and interests
 
 🔗 [Click here](https://gudipatipallavi.github.io/product_portfolio/website/) to check out the latest version of the site.
+
+
+
+
 
 
 
