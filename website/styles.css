@@ -709,6 +709,36 @@ figcaption {
     display: none !important;
   }
 
+  /* Remove unwanted scrollbar */
+body {
+  align-content: center;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+/* Hide scrollbar in Chrome/Safari */
+body::-webkit-scrollbar {
+  display: none;
+}
+
+
+/* Adjust About Section Layout */
+.about-me-content {
+  max-width: 100%;
+  overflow-x: hidden;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+}
+
+/* Ensure images don't cause overflow */
+figure img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
 
 
   
