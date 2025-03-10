@@ -403,13 +403,23 @@ footer {
   color: #777777;
 }
 
-.about-me-content {
+/* .about-me-content {
   max-width: 1152px;
   margin: 0 142px;
   position: relative;
   align-items: flex-start;
   animation: fadein 1s;
+} */
+
+.about-me-content {
+  max-width: 100%;
+  overflow-x: hidden;  /* Ensures no side scrolling */
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+  text-align: center;
 }
+
 
 .about-me-name {
   margin-bottom: 40px;
@@ -737,6 +747,23 @@ figure img {
   max-width: 100%;
   height: auto;
   display: block;
+  margin: 0 auto;
 }
+
+.container {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+
+/* Global fix to prevent unwanted scrolling */
+html, body {
+  overflow-x: hidden;  /* Prevents horizontal scrolling */
+  margin: 0;
+  padding: 0;
+  width: 100vw;  /* Ensures full width */
+  height: 100vh;
+}
+
 
 }
