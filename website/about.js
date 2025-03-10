@@ -12,3 +12,16 @@
 // }
 
 // window.addEventListener('scroll', scrollAppear);
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    let options = {
+        strings: ["Product Manager", "Product Designer"],
+        typeSpeed: 100,
+        backSpeed: 50,
+        backDelay: 1000,
+        loop: true
+    };
+
+    let typed = new Typed("#typing-text", options);
+});

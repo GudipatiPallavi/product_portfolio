@@ -56,16 +56,16 @@
 //     menu.style.display = "block";
 //   }
 
-  document.addEventListener("DOMContentLoaded", function () {
-    var typed = new typed("#typing-text", {
-      strings: ["Product Manager", "Software Engineer", "Data Enthusiast"],  // Add more titles here
-      typeSpeed: 100,  // Typing speed in milliseconds
-      backSpeed: 50,   // Deleting speed
-      loop: true,      // Loop the animation infinitely
-      showCursor: true, // Show blinking cursor
-      cursorChar: "|",  // Cursor appearance
-    });
-  });
+  // document.addEventListener("DOMContentLoaded", function () {
+  //   var typed = new typed("#typing-text", {
+  //     strings: ["Product Manager", "Software Engineer", "Data Enthusiast"],  // Add more titles here
+  //     typeSpeed: 100,  // Typing speed in milliseconds
+  //     backSpeed: 50,   // Deleting speed
+  //     loop: true,      // Loop the animation infinitely
+  //     showCursor: true, // Show blinking cursor
+  //     cursorChar: "|",  // Cursor appearance
+  //   });
+  // });
   
 
 
