@@ -403,15 +403,13 @@ footer {
   color: #777777;
 }
 
-/* .about-me-content {
+.about-me-content {
   max-width: 1152px;
   margin: 0 142px;
   position: relative;
   align-items: flex-start;
   animation: fadein 1s;
-} */
-
-
+}
 
 .about-me-name {
   margin-bottom: 40px;
@@ -558,9 +556,9 @@ figcaption {
   nav {
     margin: 10vh 60px 8vh 60px;
   }
-  /* .about-me-content {
+  .about-me-content {
     margin: 0 60px;
-  } */
+  }
   .selected-work {
     margin-bottom: 40px;
   }
@@ -593,10 +591,10 @@ figcaption {
   nav {
     margin: 10vh 16px 10vh 16px;
   }
-  /* .about-me-content {
+  .about-me-content {
     margin-right: 16px;
     margin-left: 16px;
-  } */
+  }
   .brand {
     font-size: 20px;
   }
@@ -726,61 +724,19 @@ body::-webkit-scrollbar {
 
 
 /* Adjust About Section Layout */
-/* .about-me-content {
+.about-me-content {
   max-width: 100%;
   overflow-x: hidden;
   padding-left: 20px;
   padding-right: 20px;
   margin: 0 auto;
-} */
+}
 
 /* Ensure images don't cause overflow */
-/* figure img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin: 0 auto;
-} */
-
-
-
-
-/* Global fix to prevent unwanted scrolling */
-html, body {
-  overflow-x: hidden;  /* Prevents horizontal scrolling */
-  margin: 0;
-  padding: 0;
-  width: 100vw;  /* Ensures full width */
-  height: 100vh;
-}
-
-/* Ensure .about-me-content does not overflow */
-.about-me-content {
-  max-width: 100%;
-  overflow: hidden;
-  padding: 20px;
-  margin: 0 auto;
-  /* text-align: center; */
-}
-
-/* Fix figure (profile image) and prevent it from overflowing */
-figure {
-  max-width: 100%;
-  overflow: hidden;
-  margin: 0 auto;
-}
-
 figure img {
   max-width: 100%;
   height: auto;
   display: block;
-}
-
-/* Fix container elements to prevent excess width */
-.container, .content {
-  max-width: 100%;
-  overflow-x: hidden;
-  padding: 0 20px;  /* Adds small padding to avoid touching the edges */
 }
 
 
