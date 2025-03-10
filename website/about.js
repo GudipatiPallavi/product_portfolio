@@ -13,15 +13,17 @@
 
 // window.addEventListener('scroll', scrollAppear);
 
-
 document.addEventListener("DOMContentLoaded", function () {
-    let options = {
-        strings: ["Product Manager", "Product Designer"],
-        typeSpeed: 100,
-        backSpeed: 50,
-        backDelay: 1000,
-        loop: true
-    };
-
-    let typed = new Typed("#typing-text", options);
+    if (document.getElementById("typing-text")) {  // Check if element exists
+        let typed = new Typed("#typing-text", {
+            strings: ["Product Manager", "Product Designer"],
+            typeSpeed: 100,
+            backSpeed: 50,
+            backDelay: 1000,
+            loop: true
+        });
+    } else {
+        console.error("Element #typing-text not found!");
+    }
 });
+
