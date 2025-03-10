@@ -754,14 +754,6 @@ html, body {
   height: 100vh;
 }
 
-/* Global fix to remove horizontal scrollbar */
-html, body {
-  overflow-x: hidden !important;  /* Completely remove horizontal scrolling */
-  width: 100%;
-  margin: 0;
-  padding: 0;
-}
-
 /* Ensure .about-me-content does not overflow */
 .about-me-content {
   max-width: 100%;
