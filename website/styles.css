@@ -760,7 +760,7 @@ html, body {
   overflow: hidden;
   padding: 20px;
   margin: 0 auto;
-  text-align: center;
+  /* text-align: center; */
 }
 
 /* Fix figure (profile image) and prevent it from overflowing */
