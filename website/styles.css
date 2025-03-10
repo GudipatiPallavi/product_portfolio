@@ -411,14 +411,6 @@ footer {
   animation: fadein 1s;
 } */
 
-.about-me-content {
-  max-width: 100%;
-  overflow-x: hidden;  /* Ensures no side scrolling */
-  padding-left: 20px;
-  padding-right: 20px;
-  margin: 0 auto;
-  text-align: center;
-}
 
 
 .about-me-name {
@@ -566,9 +558,9 @@ figcaption {
   nav {
     margin: 10vh 60px 8vh 60px;
   }
-  .about-me-content {
+  /* .about-me-content {
     margin: 0 60px;
-  }
+  } */
   .selected-work {
     margin-bottom: 40px;
   }
@@ -601,10 +593,10 @@ figcaption {
   nav {
     margin: 10vh 16px 10vh 16px;
   }
-  .about-me-content {
+  /* .about-me-content {
     margin-right: 16px;
     margin-left: 16px;
-  }
+  } */
   .brand {
     font-size: 20px;
   }
@@ -734,26 +726,23 @@ body::-webkit-scrollbar {
 
 
 /* Adjust About Section Layout */
-.about-me-content {
+/* .about-me-content {
   max-width: 100%;
   overflow-x: hidden;
   padding-left: 20px;
   padding-right: 20px;
   margin: 0 auto;
-}
+} */
 
 /* Ensure images don't cause overflow */
-figure img {
+/* figure img {
   max-width: 100%;
   height: auto;
   display: block;
   margin: 0 auto;
-}
+} */
 
-.container {
-  max-width: 100%;
-  overflow-x: hidden;
-}
+
 
 
 /* Global fix to prevent unwanted scrolling */
@@ -764,6 +753,44 @@ html, body {
   width: 100vw;  /* Ensures full width */
   height: 100vh;
 }
+
+/* Global fix to remove horizontal scrollbar */
+html, body {
+  overflow-x: hidden !important;  /* Completely remove horizontal scrolling */
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Ensure .about-me-content does not overflow */
+.about-me-content {
+  max-width: 100%;
+  overflow: hidden;
+  padding: 20px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Fix figure (profile image) and prevent it from overflowing */
+figure {
+  max-width: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+figure img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Fix container elements to prevent excess width */
+.container, .content {
+  max-width: 100%;
+  overflow-x: hidden;
+  padding: 0 20px;  /* Adds small padding to avoid touching the edges */
+}
+
 
 
 }
