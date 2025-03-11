@@ -28,20 +28,9 @@
 
 body {
   align-content: center;
-  overflow-x: hidden;  /* Prevents unwanted horizontal scrolling */
 }
 
-/* Hide scrollbar for Webkit browsers (Chrome, Safari) */
-body::-webkit-scrollbar {
-  display: none;
-}
-
-
-/* body {
-  align-content: center;
-} */
-
-/* .body::after {
+.body::after {
   z-index: 3;
   content: "";
   position: absolute;
@@ -54,7 +43,7 @@ body::-webkit-scrollbar {
   transform: scaleX(0);
   animation: slide-animation 2s cubic-bezier(1, .01, .22, 1.04) both;
   animation-delay: 0.4s;
-} */
+}
 
 @keyframes slide-animation {
   0% {
@@ -175,12 +164,12 @@ a {
 }
 
 .hero-text {
-  max-width: 900px;
+  max-width: 1156px;
   margin-bottom: 8vh;
-  font-size: 48px;
+  font-size: 72px;
   font-weight: 300;
   letter-spacing: -0.5px;
-  line-height: 64px;
+  line-height: 120px;
   color: #3d3d3d;
   animation: fadein 1s;
 }
@@ -287,20 +276,15 @@ a {
   padding-bottom: 20px;
 }
 
-/* .disappear {
+.disappear {
   opacity: 0;
   transform: translateY(20px);
-} */
+}
 
 .appear {
   opacity: 1;
-  /* transform: translateY(0); */
-  transform: none;
+  transform: translateY(0);
 }
-.disappear {
-  opacity: 1;
-  transform: none;
-} 
 
 .case-study-text {
   z-index: 0;
@@ -354,13 +338,8 @@ a {
 }
 
 .case-study-image {
-  /* object-fit: contain;
-  pointer-events: none; */
-  width: 100%; /* Adjust width, or use a fixed px value like 300px */
-  max-width: 600px; /* Ensures it doesn’t get too large */
-  height: auto; /* Maintains aspect ratio */
-  object-fit: cover; /* Crops image to fit if necessary */
-  border-radius: 10px; /
+  object-fit: contain;
+  pointer-events: none;
 }
 
 .more-margin {
@@ -432,7 +411,7 @@ footer {
   line-height: 40px;
 }
 
-/* .p1 {
+.p1 {
   animation: fadein 1s;
 }
 
@@ -446,7 +425,7 @@ footer {
 
 .p4 {
   animation: fadein 2s;
-} */
+}
 
 .about-me-content a {
   color: #2667FF;
@@ -465,10 +444,7 @@ figure {
 }
 
 figure img {
-  width: 20%px;
-  max-width: 200px; 
-  /* You can set a limit  */
-  height: auto; 
+  width: 40%px;
 }
 
 figure::after {
@@ -692,53 +668,4 @@ figcaption {
   .intern-cta-button {
     padding: 20px 10px;
   }
-
-  #typing-text {
-    color: #4CAF50;  /* Green text */
-    font-weight: bold;
-    font-size: 24px;
-  }
-  .typed-cursor {
-    color: #4CAF50;  /* Cursor color */
-    font-size: 24px;
-  }
-  
-
-
-  h2::after, a::after {
-    display: none !important;
-  }
-
-  /* Remove unwanted scrollbar */
-body {
-  align-content: center;
-  overflow-x: hidden;
-  margin: 0;
-  padding: 0;
-}
-
-/* Hide scrollbar in Chrome/Safari */
-body::-webkit-scrollbar {
-  display: none;
-}
-
-
-/* Adjust About Section Layout */
-.about-me-content {
-  max-width: 100%;
-  overflow-x: hidden;
-  padding-left: 20px;
-  padding-right: 20px;
-  margin: 0 auto;
-}
-
-/* Ensure images don't cause overflow */
-figure img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
-
-
-
 }
