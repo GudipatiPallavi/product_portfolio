@@ -26,9 +26,9 @@
   user-select: none;
 }
 
-body {
+/* body {
   align-content: center;
-}
+} */
 
 .body::after {
   z-index: 3;
@@ -785,28 +785,20 @@ html, body {
 
 
 
-/* Fix button container padding */
-.case-study {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  padding-bottom: 30px; /* Extra space below button */
-}
 
 /* Ensure button is not cut off */
 .case-study-text {
   overflow: visible !important;
 }
 
-/* Ensure no horizontal scrolling anywhere */
+/* Ensure no horizontal scrolling anywhere
 html, body {
   overflow-x: hidden !important; 
   width: 100%;
   margin: 0;
   padding: 0;
   max-width: 100vw;
-}
+} */
 
 /* Fix .about-me-content & .hero-text */
 .about-me-content, .hero-text, .case-study {
@@ -849,6 +841,7 @@ figure img {
   margin: 0 auto;
 }
 
+
 .scroll-down-arrow {
   text-align: center;
   pointer-events: none;
@@ -859,15 +852,14 @@ figure img {
 }
 
 
-
 .case-study-read-button {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   padding: 14px 24px;
-  background-color: #2667FF; /* Blue color */
+  background-color: #2667FF; /* Blue button */
   color: white;
-  border-radius: 30px; /* More rounded edges */
+  border-radius: 30px; /* Rounded edges */
   box-shadow: 0px 4px 6px rgba(38, 103, 255, 0.3); /* Soft shadow */
   font-weight: 500;
   font-size: 16px;
@@ -881,6 +873,7 @@ figure img {
   width: 16px; /* Adjust arrow size */
   height: auto;
   display: inline-block;
+  margin-left: 5px; /* Space out the arrow */
 }
 
 .case-study-read-button:hover {
@@ -893,5 +886,25 @@ figure img {
   box-shadow: 0px 1px 2px rgba(38, 103, 255, 0.6);
 }
 
-  
+
+/* Ensure no horizontal scrolling anywhere */
+html, body {
+  overflow-x: hidden !important;
+  max-width: 100vw;
+}
+
+/* Fix any unexpected vertical scrolling */
+body {
+  overflow-y: auto;
+}
+
+/* Ensure about and work sections don't cause horizontal overflow */
+.about-me-content, .hero, .case-study {
+  max-width: 100% !important;
+  overflow-x: hidden !important;
+  margin: 0 auto;
+}
+
+
+
 }
