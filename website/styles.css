@@ -690,7 +690,7 @@ figcaption {
     max-width: 200px;  /* Adjust size */
   }
 
-  /* Remove horizontal scrollbar from the entire page */
+ /* Ensure no horizontal scrolling anywhere on the page */
 html, body {
   overflow-x: hidden !important;
   width: 100%;
@@ -699,7 +699,8 @@ html, body {
   max-width: 100vw;
 }
 
-.about-me-content {
+
+/* .about-me-content {
   max-width: 100%;
   overflow: hidden;
   padding: 20px;
@@ -708,14 +709,32 @@ html, body {
   display: flex;
   flex-direction: column;
   align-items: center;
+} */
+
+.about-me-content, .hero-text {
+  max-width: 100% !important;
+  overflow-x: hidden !important;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+  text-align: center;
 }
 
-.about-me-content img {
+
+/* .about-me-content img {
   max-width: 100%;
   height: auto;
   display: block;
   margin: 0 auto;
+} */
+
+.about-me-content img, .hero img {
+  max-width: 100% !important;
+  height: auto;
+  display: block;
+  margin: 0 auto;
 }
+
 
   
 }
