@@ -157,7 +157,7 @@ a {
 	}
 }
 
-.hero-text {
+/* .hero-text {
 	max-width: 1156px;
 	margin-bottom: 8vh;
 	font-size: 72px;
@@ -166,7 +166,7 @@ a {
 	line-height: 120px;
 	color: #3d3d3d;
 	animation: fadein 1s;
-}
+} */
 
 .digital-experiences {
 	color: #2667ff;
@@ -463,7 +463,7 @@ figcaption {
 	color: #777777;
 }
 
-@media (min-width: 1500px) {
+/* @media (min-width: 1500px) {
 
 	.hero-text,
 	nav,
@@ -476,7 +476,7 @@ figcaption {
 	.hero-text {
 		font-size: 96px;
 		line-height: 150px;
-	}
+	} */
 
 	.about-me-name {
 		font-size: 80px;
@@ -520,17 +520,17 @@ figcaption {
 	.footer-copyright {
 		font-size: 20px;
 	}
-}
+/* }
 
 @media (max-width: 1318px) {
 	.hero-text {
 		font-size: 64px;
-	}
+	} */
 
-	.second {
+	/* .second {
 		background-color: transparent;
 	}
-}
+} */
 
 @media (max-width: 1201px) {
 	.hero {
@@ -734,4 +734,39 @@ figcaption {
 	a::after {
 		display: none !important;
 	}
+
+
+  .hero-text {
+    max-width: 1156px;
+    margin-bottom: 8vh;
+    font-size: 48px;  /* Decrease font size */
+    font-weight: 300;
+    letter-spacing: -0.5px;
+    line-height: 64px;  /* Reduce line height for better spacing */
+    color: #3d3d3d;
+    animation: fadein 1s;
+  }
+  
+  /* Responsive font size adjustments */
+  @media (max-width: 1024px) {
+      .hero-text {
+          font-size: 42px;
+          line-height: 58px;
+      }
+  }
+  
+  @media (max-width: 768px) {
+      .hero-text {
+          font-size: 36px;
+          line-height: 50px;
+      }
+  }
+  
+  @media (max-width: 480px) {
+      .hero-text {
+          font-size: 28px;
+          line-height: 40px;
+      }
+  }
+  
 }
