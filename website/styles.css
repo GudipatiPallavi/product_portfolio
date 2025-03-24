@@ -301,7 +301,7 @@ a {
 .case-study-title {
   z-index: 0;
   margin-bottom: 30px;
-  font-size: 48px;
+  font-size: 36px;
   font-weight: 400;
   color: #3d3d3d;
 }
@@ -309,9 +309,9 @@ a {
 .case-study-description {
   z-index: 0;
   margin-bottom: 40px;
-  font-size: 24px;
+  font-size: 18px;
   font-weight: 300;
-  line-height: 40px;
+  line-height: 28px;
   letter-spacing: 0.5px;
   color: #3d3d3d;
 }
@@ -496,12 +496,12 @@ figcaption {
     margin-bottom: 80px;
   }
   .case-study-title {
-    font-size: 64px;
-    line-height: 80px;
+    font-size: 36px;
+    line-height: 60px;
   }
   .case-study-description {
     margin-bottom: 56px;
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 300;
     line-height: 48px;
     letter-spacing: 1px;
