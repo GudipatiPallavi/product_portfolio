@@ -131,6 +131,16 @@
         class="fancy-a" style="font-weight: 500;"></a> </p>
   </footer>
   <!-- <script src="app.js"></script> -->
+  <script>
+    document.documentElement.style.overflow = "hidden";
+  
+    window.addEventListener("load", () => {
+      setTimeout(() => {
+        document.documentElement.style.overflow = "auto";
+      }, 1800); // match animation duration
+    });
+  </script>
+  
 </body>
 
 </html>

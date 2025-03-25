@@ -737,18 +737,17 @@ figcaption {
   box-sizing: border-box;
 }
 
-/* Hide all scrollbars but allow scroll */
-html, body {
+body {
   overflow-x: hidden;
   overflow-y: auto;
-  height: 100%;
-  -ms-overflow-style: none;  /* IE/Edge */
-  scrollbar-width: none;     /* Firefox */
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 body::-webkit-scrollbar {
-  display: none;  /* Chrome/Safari */
+  display: none;
 }
+
 
 /* ✅ Blue animation overlay (won’t cause scroll) */
 body::after {
@@ -763,9 +762,10 @@ body::after {
   pointer-events: none;
   transform-origin: left;
   transform: scaleX(0);
-  animation: slide-animation 1.8s cubic-bezier(0.77, 0, 0.175, 1) both;
+  animation: slide-animation 1.8s ease-out both;
   animation-delay: 0.2s;
 }
+
 
 @keyframes slide-animation {
   0% {
@@ -778,6 +778,7 @@ body::after {
     transform: scaleX(0);
   }
 }
+
 
 /* Just for demo content */
 .content {
