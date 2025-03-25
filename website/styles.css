@@ -730,19 +730,27 @@ figcaption {
 }
 
 
+/* Global reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-/* ✅ Hide scrollbar visually, allow vertical scroll if needed */
-body {
+/* Hide all scrollbars but allow scroll */
+html, body {
   overflow-x: hidden;
   overflow-y: auto;
-  -ms-overflow-style: none;  /* IE & Edge */
+  height: 100%;
+  -ms-overflow-style: none;  /* IE/Edge */
   scrollbar-width: none;     /* Firefox */
 }
 
 body::-webkit-scrollbar {
-  display: none;  /* Chrome, Safari */
+  display: none;  /* Chrome/Safari */
 }
 
+/* ✅ Blue animation overlay (won’t cause scroll) */
 body::after {
   content: "";
   position: fixed;
@@ -769,4 +777,10 @@ body::after {
   100% {
     transform: scaleX(0);
   }
+}
+
+/* Just for demo content */
+.content {
+  padding: 100px;
+  font-size: 32px;
 }
