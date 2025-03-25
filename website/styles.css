@@ -697,13 +697,44 @@ figcaption {
   50% { opacity: 0; }
 }
 
-/* Hide scrollbar for Chrome, Safari and Opera */
+.about-image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 40px 0 60px;
+}
+
+.about-image img {
+  width: 60%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.about-image img:hover {
+  transform: scale(1.02);
+}
+
+.about-image figcaption {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #777;
+  text-align: center;
+}
+
+
+/* ✅ Completely Hide Scrollbars — Cross-Browser */
+
+/* For Chrome, Safari and Opera */
 body::-webkit-scrollbar {
   width: 0px;
+  height: 0px;
   background: transparent;
 }
 
-/* Hide scrollbar for IE, Edge and Firefox */
+/* For IE, Edge and Firefox */
 body {
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;     /* Firefox */
