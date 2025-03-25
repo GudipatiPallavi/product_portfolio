@@ -733,17 +733,15 @@ figcaption {
 }
 
 
-/* ✅ Completely Hide Scrollbars — Cross-Browser */
 
-/* For Chrome, Safari and Opera */
-body::-webkit-scrollbar {
-  width: 0px;
-  height: 0px;
-  background: transparent;
+
+body {
+  align-content: center;
+  overflow: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
-/* For IE, Edge and Firefox */
-body {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;     /* Firefox */
+body::-webkit-scrollbar {
+  display: none;
 }
