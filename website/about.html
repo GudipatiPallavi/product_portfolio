@@ -111,6 +111,16 @@
   </footer>
   <script src="about.js"></script>
   <script src="app.js"></script>
+
+  <script>
+    document.documentElement.style.overflowY = "hidden";
+    window.addEventListener("load", () => {
+      setTimeout(() => {
+        document.documentElement.style.overflowY = "auto";
+      }, 2000); // Match overlay animation duration
+    });
+  </script>
+  
 </body>
 
 </html>
