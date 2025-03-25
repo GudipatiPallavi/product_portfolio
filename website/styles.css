@@ -422,7 +422,7 @@ figure img {
 }
 
 
-figure::after {
+/* figure::after {
   content: "";
   position: absolute;
   background-color: #2667ff;
@@ -434,7 +434,7 @@ figure::after {
   transform: scaleX(0);
   animation: slide-animation 2s cubic-bezier(1, .01, .22, 1.04) both;
   animation-delay: 0.4s;
-}
+} */
 
 figcaption {
   margin-top: 10px;
@@ -723,6 +723,7 @@ body::after {
   animation: slide-animation 1.8s ease-out forwards;
   animation-delay: 0.2s;
 }
+
 
 @keyframes slide-animation {
   0% {
