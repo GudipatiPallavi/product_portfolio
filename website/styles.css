@@ -743,10 +743,9 @@ body::-webkit-scrollbar {
   display: none;  /* Chrome, Safari */
 }
 
-/* ✅ Fix animation so it doesn't cause overflow */
 body::after {
   content: "";
-  position: fixed;  /* stays in viewport */
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -756,14 +755,18 @@ body::after {
   pointer-events: none;
   transform-origin: left;
   transform: scaleX(0);
-  animation: slide-animation 2s cubic-bezier(1, .01, .22, 1.04) both;
-  animation-delay: 0.4s;
+  animation: slide-animation 1.8s cubic-bezier(0.77, 0, 0.175, 1) both;
+  animation-delay: 0.2s;
 }
 
-/* ✅ Animation keyframes */
 @keyframes slide-animation {
-  0% { transform: scaleX(0); }
-  30% { transform: scaleX(1); }
-  100% { transform: translateX
+  0% {
+    transform: scaleX(0);
+  }
+  50% {
+    transform: scaleX(1);
+  }
+  100% {
+    transform: scaleX(0);
   }
 }
