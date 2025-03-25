@@ -128,7 +128,7 @@ a {
   margin-right: 48px;
 }
 
-.hero-text {
+/* .hero-text {
   max-width: 1156px;
   margin-bottom: 8vh;
   font-size: 72px;
@@ -137,6 +137,17 @@ a {
   line-height: 120px;
   color: #3d3d3d;
   animation: fadein 1s ease;
+} */
+
+.hero-text {
+  max-width: 1156px;
+  margin-bottom: 6vh;
+  font-size: 48px;
+  font-weight: 300;
+  letter-spacing: -0.3px;
+  line-height: 1.5;
+  color: #3d3d3d;
+  animation: fadein 1s;
 }
 
 .digital-experiences {
