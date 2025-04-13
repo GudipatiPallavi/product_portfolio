@@ -15,7 +15,7 @@
 
 document.addEventListener("DOMContentLoaded", () => {
     const typewriterText = document.getElementById("typewriter");
-    const roles = ["Product Manager", "Product Designer", "Software Engineer", "Data Enthusiast"];
+    const roles = ["Product Manager", "Software Engineer", "Data Enthusiast"];
     let roleIndex = 0;
     let charIndex = 0;
     let isDeleting = false;
