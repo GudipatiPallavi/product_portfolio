@@ -489,4 +489,25 @@ footer {
   }
   .grid-photo.tall { grid-row: span 1; }
   .grid-photo.wide { grid-column: span 2; }
+
+  .case-study-buttons {
+  grid-column: 3;
+  grid-row: 1 / 4;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-self: center;
+}
+
+.proto-btn {
+  background: var(--ink);
+  color: var(--paper) !important;
+  border-color: var(--ink);
+}
+
+.proto-btn:hover {
+  background: var(--accent);
+  border-color: var(--accent);
+}
+
 }
